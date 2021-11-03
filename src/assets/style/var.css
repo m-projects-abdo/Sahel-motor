@@ -1,0 +1,28 @@
+:root {
+  --yellow: #ebc472;
+  --light-50: #fafafa;
+  --light-100: #ffffff;
+  --primary: #0d6efd;
+
+  /* background variable */
+  --bg-black-900: #111111ea;
+  --bg-black-100: #dddddd;
+  --bg-black-50: #eff0f4;  
+  --bg-opacity: rgba(255,255,255,.5);
+
+  /* Text variable */
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-600: #666666;
+  --text-black-300: #bbbbbb;
+
+  /* Shadows */
+  --outer-shadow: 3px 3px 3px #d0d0d0,
+                -3px -3px 3px #f8f8f8;
+  --outer-shadow-0: 0 0 0 #d0d0d0,
+                  0 0 0 #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0,
+                inset -3px -3px 3px #f8f8f8;
+  --inner-shadow-0: inset 0 0 0 #d0d0d0,
+                    inset 0 0 0 #f8f8f8;
+}

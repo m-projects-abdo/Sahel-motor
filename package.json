@@ -1,0 +1,42 @@
+{
+  "name": "sahel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --watch --mode=development",
+    "prod": "webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack -p && node server.js",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Mohammed Abdo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^2.1.0",
+    "node-sass": "^6.0.1",
+    "path": "^0.12.7",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.1.0",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.0.2",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
+    "gsap": "^3.7.1",
+    "http-server": "^0.12.3",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "postcss-preset-env": "^6.7.0"
+  }
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Georama:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/*
+* font-family: 'Ephesis', cursive; logo
+* font-family: 'Georama', sans-serif; regular
+*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Georama', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fontstyle {
+  font-family: 'Ephesis', cursive;
+}
+.background-main {
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+}
+.comment-header {
+  margin-left: -17px;
+}
+.baseloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+}
+.cursor {
+  cursor: pointer;
+}
+.height-100 {
+  min-height: 100vh;
+}
