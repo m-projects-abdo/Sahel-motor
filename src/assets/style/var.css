@@ -1,11 +1,11 @@
 :root {
-  --yellow: #ebc472;
+  --yellow: #ffc033;
   --light-50: #fafafa;
-  --light-100: #ffffff;
+  --light-100: #f1ffff;
   --primary: #0d6efd;
 
   /* background variable */
-  --bg-black-900: #111111ea;
+  --bg-black-900: #2e2e2e;
   --bg-black-100: #dddddd;
   --bg-black-50: #eff0f4;  
   --bg-opacity: rgba(255,255,255,.5);

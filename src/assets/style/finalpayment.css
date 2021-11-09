@@ -1,0 +1,202 @@
+@import "./var.css";
+
+.pr-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.pr-subtitle h1 {
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--yellow);
+}
+
+.continue-payment {
+  width: 50%;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.invoice-details {
+  width: 100%;
+}
+
+.orders-and-coupon {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.order-subtitle {
+  order: 1;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.order-subtitle-item {
+  font-size: 1.3rem;
+  opacity: .8;
+  padding-bottom: 5px;
+}
+
+.order-subtitle-text {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--bg-black-900);
+}
+
+.orders-text {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--bg-black-900);
+}
+
+.order-detail {
+  width: 50%;
+}
+.order-sal {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+  .select-items {
+    border: 1px solid #dbdbdb;
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background: var(--bg-black-100);
+    cursor: pointer;
+    color: var(--bg-black-900);
+    font-weight: 900;
+  }
+
+  .select-items:focus {
+    border: 1px solid var(--bg-black-900);
+    color: var(--bg-black-900);
+  }
+  .coupon-detail {
+    width: 28%;
+  }
+
+.coupon-input {
+  outline: none;
+  border: none;
+  background: var(--bg-black-100);
+  padding: 10px 30px 10px 20px;
+  border-radius: 10px;
+  color: var(--bg-black-900);
+  font-weight: 900;
+}
+
+.coupon-btn {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: var(--light-100);
+  background: var(--yellow);
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+
+.check-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 19px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 900;
+  opacity: .9;
+}
+
+/* Hide the browser's default radio button */
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.check-container input:checked ~ .checkmark {
+  background-color: var(--yellow);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.check-container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.payment-btn {
+  float: right;
+  padding: 20px 0px;
+}
+.py-btn {
+  border: none;
+  outline: none;
+  padding: 11px 25px;
+  background: var(--yellow);
+  color: var(--bg-black-100);
+  font-weight: 900;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+.py-btn:hover,
+.coupon-btn:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 768px) {
+  .continue-payment {
+    width: 92%;
+  }
+  .small-width-t {
+    width: 35%;
+  }
+  .small-width-b {
+    width: 65%;
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/style/finalpayment.css">
+  <title>Final Payment</title>
+</head>
+<body>
+  <section class="section height-100 pb-4">
+    <div class="pr-subtitle">
+      <h1>تكملة الشراء</h1>
+    </div>
+    
+    <div class="continue-payment">
+      <!-- Start invoice content -->
+      <div class="invoice-details">
+        <!-- Start orders and coupon -->
+        <div class="orders-and-coupon">
+          <div class="order-subtitle small-width-t">
+            <p class="order-subtitle-text">طلباتك</p>
+          </div>
+
+          <div class="order-detail small-width-b">
+            <input 
+              class="coupon-input"
+              type="text"
+              placeholder="أدخل كود الخصم"
+            >
+            <button class="coupon-btn">حفظ</button>
+          </div>
+        </div>
+        <!-- End orders and coupon -->
+        
+        <!-- Start orders and coupon -->
+        <div class="orders-and-coupon mt-4">
+          <div class="order-subtitle">
+            <p class="orders-text">المنتج</p>
+            <span class="order-subtitle-item">دودج تشارجر</span>
+          </div>
+
+          <div class="order-sal">
+            <p class="orders-text">المجموع</p>
+            <span class="order-subtitle-item">89 ريال</span>            
+          </div>
+        </div>
+        <!-- End orders and coupon -->
+        
+        <!-- Start orders and coupon -->
+        <div class="orders-and-coupon mt-5">
+          <div class="order-subtitle">
+            <span class="order-subtitle-item">مجموع سلة المشتريات</span>
+            <span class="order-subtitle-item">الشحن</span>
+            <span class="order-subtitle-item">الضريبة</span>
+            <span class="order-subtitle-item">الخصم</span>
+          </div>
+
+          <div class="order-sal">
+            <span class="order-subtitle-item">89 ريال</span>
+            <span class="order-subtitle-item">89 ريال</span>
+            <span class="order-subtitle-item">89 ريال</span>
+            <span class="order-subtitle-item">89 ريال</span>
+          </div>
+        </div>
+        <!-- End orders and coupon -->
+
+        <!-- Start orders and coupon -->
+        <div class="orders-and-coupon mt-4">
+          <div class="order-subtitle">
+            <p class="orders-text">المجموع</p>
+          </div>
+
+          <div class="order-sal">
+            <p class="orders-text">899 ريال</p>
+          </div>
+        </div>
+        <!-- End orders and coupon -->
+
+        <div class="orders-and-coupon mt-4">
+          <div class="order-subtitle small-width-t">
+            <p class="orders-text">العنوان</p>
+          </div>
+
+          <div class="coupon-detail small-width-b">
+            <div class="custom-select">
+              <select class="select-items">
+                <option>اختر عنوان</option>
+                <option value="1">سعودية</option>
+                <option value="2">كويت</option>
+                <option value="3">عمان</option>
+                <option value="4">أمارات</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="orders-and-coupon mt-4">
+          <div class="order-subtitle">
+            <p class="orders-text">طرق الدفع</p>
+          </div>
+
+          <div class="coupon-detail">
+            <label class="check-container">اون لاين
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+
+      </div>
+      <!-- End invoice content -->
+      
+      <div class="payment-btn">
+        <button type="submit" class="py-btn">تكملة الشراء</button>
+      </div>  
+    </div>
+  </section>
+  <script src="../dist/main.js"></script>
+</body>
+</html>

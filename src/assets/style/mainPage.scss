@@ -3,7 +3,10 @@
 .main-page {
   min-height: 100vh;
   width: 100%;
-  background: url('../images/bg-1920-new.jpg');
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.23)),
+    url('../images/hero-bg.jpg');
+  background-size: cover;
 
   .subtitle {
     margin-top: 10rem;
@@ -80,13 +83,111 @@
   }
 }
 
+.search-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .4s ease-out;
+  overflow: hidden;
+
+  &.search-modal-container-active {
+    visibility: visible;
+    opacity: 1;
+    transition: all .4s ease;
+  }
+
+  .search-modal {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    width: 400px;
+    position: absolute;
+    right: 3%;
+    top: 4%;
+    z-index: 10001;
+
+    .search-content {
+      position: relative;
+
+      .close-modal {
+        position: absolute;
+        top: -5px;
+        right: 5px;
+        cursor: pointer;
+
+        &:hover {
+          i {
+            color: var(--yellow)
+          }
+        }
+
+        i {
+          font-size: 1.3rem;
+          font-weight: 900;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-bottom: 0 !important;
+      }
+  
+      .search-row {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        .search-input {
+          width: 100%;
+          border: none;
+          outline: none;
+          background: #e6e6e6;
+          border-radius: 5px;
+          padding: 10px 15px;
+        }
+  
+        .search-icon {
+          padding: 8px 15px;
+          color: var(--light-100);
+          text-align: center;
+          background: var(--yellow);
+          border-radius: 5px;
+          margin-left: 5px;
+          cursor: pointer;
+
+          &:hover {
+            background: var(--bg-black-900);
+          }
+
+          i {
+            font-size: 1.2rem;
+            font-weight: 900;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-page{
     .subtitle {
       margin-top: 8rem;
       div {
         h1 {
-          font-size: 1.6rem;
+          font-size: 2rem;
+        }
+        p {
+          font-size: .9rem;
         }
       }
     }

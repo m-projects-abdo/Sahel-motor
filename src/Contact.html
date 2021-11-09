@@ -9,41 +9,63 @@
   <body>
     <section>
       <div class="container center-items height-100 overflow-hidden">
-        <div class="row">
+        <div class="form-row">
           <!-- start form inputs -->
             <form class="container-form-v center-items">
               <div class="subtitle">
                 <h1>Contact with us</h1>
               </div>
-              <div class="form-input-group-v">
-                <div class="input-v">
-                  <input 
-                    class="input-value-v" 
-                    type="text" 
-                    placeholder="Email" 
-                  />
+              <div class="form-input-group-v relative d-flex">
+                <!-- parent div -> relative -> contain: all input and message area
+                button div -> absolute -> contain: button -->
+
+                <div class="all-inputs">
+                  <!-- All inputs   -->
+                  <div class="col-md-6">
+                    <div class="input-v">
+                      <input 
+                        class="input-value-v" 
+                        type="text" 
+                        placeholder="Subject" 
+                      />
+                    </div>
+                    <div class="input-v mb-1">
+                      <input 
+                        class="input-value-v"
+                        type="email" 
+                        placeholder="Email" 
+                      />
+                    </div>
+                  </div>
+                  <!-- Message area -->
+                  <div class="col-md-6 message-area">
+                    <textarea 
+                      class="message-area-input"
+                      placeholder="Message.."
+                      name="message" 
+                      id="message" 
+                    ></textarea>
+                  </div>
                 </div>
-                <div class="input-v mb-1">
-                  <div class="toggle">
-                    <i>@</i>
-                  </div>
-                  <input 
-                    class="input-value-v"
-                    type="password" 
-                    placeholder="Password" 
-                  />
+                <!-- End inputs -->
+
+                <!-- Absolute -->
+                <div class="button-v">
+                  <button 
+                    type="submit" 
+                    class="btn btn-block font-weight-bold">
+                    Send
+                  </button>
                 </div>
-                <div class="switch-page">
-                  <div class="button-v">
-                    <button 
-                      type="submit" 
-                      class="btn btn-block font-weight-bold">
-                      Login
-                    </button>
-                  </div>
-                  <div class="switch-page-link mt-3">
-                    <a href="#" class="title">
-                      You don't have an account ?
-                    </a>
-                  </div>
-            
+                <!-- End button -->
+
+              </div>
+            </form>
+          <!-- end form inputs -->
+        </div>
+      </div>  
+    </section>
+    
+    <script src="../dist/main.js"></script>
+  </body>
+</html>
