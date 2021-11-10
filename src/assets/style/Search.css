@@ -1,0 +1,107 @@
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+}
+.search-box .mask {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -9px;
+  background: #fff;
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  opacity: 0.59;
+}
+.search-box .search-container {
+  z-index: 2;
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 16px 22px 17px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-box .search-container .main-input {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.search-box .search-container .main-input .custom-select .select-items {
+  border: 1px solid #dbdbdb;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  color: darkgray;
+}
+.search-box .search-container .main-input .custom-select .select-items:focus {
+  border: 1px solid var(--bg-black-900);
+  color: var(--bg-black-900);
+}
+.search-box .search-container .main-input.main-button {
+  width: 20%;
+}
+.search-box .search-container .main-input .btn-search {
+  width: 100%;
+  height: 53px;
+  overflow: hidden;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 600;
+  color: #fff;
+  border: 0 solid transparent;
+  padding: 16px 25px;
+  vertical-align: top;
+  border-radius: 10px;
+  background-color: var(--yellow);
+  transform: translateZ(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box .search-container .main-input .btn-search:hover {
+  background: darkorange;
+}
+.search-box .search-container .main-input .btn-search span {
+  display: none;
+}
+.search-box .search-container .main-input .btn-search::before {
+  content: '' !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .1);
+  transform-origin: right top;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .search-box {
+    width: 100%;
+ }
+  .search-box .mask {
+    width: 85%;
+ }
+  .search-box .search-container {
+    flex-direction: column;
+    width: 85%;
+ }
+  .search-box .search-container .main-input.main-button {
+    width: 100%;
+ }
+  .search-box .search-container .main-input .btn-search span {
+    display: inline;
+    padding-right: 5px;
+ }
+}
