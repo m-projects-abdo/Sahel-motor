@@ -7,7 +7,7 @@ import "../assets/style/search.scss";
 import "../assets/style/footer.css";
 import "../assets/style/contact.css";
 import "../assets/style/OurService.css";
-import "../assets/style/FormStyle.scss";
+import "../assets/style/FormStyle.css";
 // import "../assets/style/product.css";
 import "../assets/style/Services.css";
 import navigation from "./navigation";
