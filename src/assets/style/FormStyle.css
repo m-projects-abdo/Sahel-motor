@@ -1,0 +1,69 @@
+@import "./var.css";
+.container-form-v {
+  flex-direction: column;
+  width: 30rem;
+}
+.container-form-v .subtitle {
+  border-bottom: 1px solid var(--yellow);
+}
+.container-form-v .subtitle h1 {
+  color: var(--yellow);
+  font-family: 'Ephesis', cursive;
+  font-weight: bold;
+}
+.container-form-v .form-input-group-v {
+  width: 80%;
+  padding-top: 10px;
+}
+.container-form-v .form-input-group-v .input-v {
+  padding: 10px 0;
+  position: relative;
+}
+.container-form-v .form-input-group-v .input-v .toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
+  user-select: none;
+}
+.container-form-v .form-input-group-v .input-v .input-value-v {
+  width: 100%;
+  background: var(--light-100);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+.container-form-v .form-input-group-v .input-v .input-value-v.input-error-v {
+  border: 1px solid red;
+}
+.container-form-v .form-input-group-v .input-v .input-value-v.input-error-v::placeholder {
+  color: red;
+}
+.container-form-v .form-input-group-v .input-v .error {
+  color: red;
+}
+.container-form-v .form-input-group-v .switch-page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.container-form-v .form-input-group-v .switch-page .button-v {
+  width: 100%;
+}
+.container-form-v .form-input-group-v .switch-page .button-v button {
+  background: var(--yellow);
+  width: 100%;
+  color: var(--light-100);
+}
+.switch-page-link .title {
+  letter-spacing: 1px !important;
+  font-weight: 300;
+  color: var(--text-black-700);
+  font-size: 1rem !important;
+}
