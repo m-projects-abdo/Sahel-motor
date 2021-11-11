@@ -5,7 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./assets/style/product.css">
-    <link rel="stylesheet" href="./assets/style/Cart.css">
+    <link rel="stylesheet" href="./assets/style/Cart.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/allStyleOfLiveWebsite.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
     <title>Product Details</title>
   </head>
@@ -19,14 +45,12 @@
               <ol class="breadcrumb__list">
                 <li class="breadcrumb__spaceship-safe-area" role="presentation"></li>
                 <li class="breadcrumb__item breadcrumb__item--parent breadcrumb__item--first">
-                  <a href="{{ url('/') }}" class="breadcrumb__item-link">{{ trans('site.Home') }}</a>
+                  <a href="#" class="breadcrumb__item-link">Home</a>
                 </li>
                 
                 <li class="breadcrumb__item breadcrumb__item--current breadcrumb__item--last" aria-current="page">
                   <span class="breadcrumb__item-link">
-                    @if (app()->getLocale() == 'ar') {{$product->ar_title}} @else 
-                    {{$product->title}}
-                    @endif
+                    Product title
                   </span>
                 </li>
               </ol>
@@ -52,40 +76,26 @@
                         </svg>
                       </button>
                       <div class="owl-carousel">
-                                        @foreach ($product->images as $image)
-                          
-                      
-                        <a class="image image--type--product" href="{{asset($image->image)}}" target="_blank" data-width="700" data-height="700">
+                        <a class="image image--type--product" href="./assets/images/chad-kirchoff-xe-e69j6-Ds-unsplash.jpg" target="_blank" data-width="700" data-height="700">
                           <div class="image__body">
-                            <img class="image__tag" src="{{asset($image->image)}}" alt="">
+                            <img class="image__tag" src="./assets/images/chad-kirchoff-xe-e69j6-Ds-unsplash.jpg" alt="">
                           </div>
                         </a>
-                        @endforeach
-      
-                      
                       </div>
                     </div>
                     <div class="product-gallery__thumbnails">
                       <div class="owl-carousel">
-                        @foreach ($product->images as $image)
-
                         <div class="product-gallery__thumbnails-item image image--type--product">
                           <div class="image__body">
-                            <img class="image__tag" src="{{asset($image->image)}}" alt="">
+                            <img class="image__tag" src="./assets/images/chad-kirchoff-xe-e69j6-Ds-unsplash.jpg" alt="">
                           </div>
                         </div>
-                        @endforeach
-
-                        
                       </div>
                     </div>
                   </div>
                   <div class="product__header">
                     <h1 class="product__title">
-                      @if (app()->getLocale() == 'ar') {{$product->ar_title}} @else 
-                      {{$product->title}}
-                      @endif
-
+                      Product title
                     </h1>
                     <div class="product__subtitle">
                     
@@ -96,31 +106,12 @@
                             </svg>
                           </div>
                           <div class="status-badge__text">
-                            @if($product->cat_info != Null) 
-                            @if (app()->getLocale() == 'ar') {{$product->cat_info->ar_title}} @else 
-                            {{$product->cat_info->title}}
-                            @endif
-                            @endif
+                            Product info
                           </div>
                           <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip" title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S"></div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="product__main">
-                    
-                    {{--
-                    <div class="product__features">
-                      <div class="product__features-title" style="color: #f0bd4e;">{{ trans('site.Key_Features') }}:</div>
-                      <ul>
-                        <li>{{ trans('site.Modal') }}: <span>@if($product->modal_info != Null) {{ $product->modal_info->title }}@endif</span></li>
-                        <li>{{ trans('site.Brand') }}: <span>@if($product->brand_info != Null) {{ $product->brand_info->title }}@endif</span></li>
-                        <li>{{ trans('site.pro_id') }}: <span> {{ $product->pro_id }}</span></li>
-
-                      </ul>
-                    
-                    </div>
-                                    --}}
                   </div>
 
                   <!-- Start support details -->
@@ -134,38 +125,32 @@
                             <div>
                               <!-- Start of product currnt price  -->
                               <p>
-                                {{ $product->price }} {{ trans('site.SAR') }}
+                                230 SAR
                               </p>
                               <!-- End of product currnt price  -->
 
                               <!-- Start of product discount price  -->
-                              @if($product->price < $product->price_before_discount)
-                                <p>
-                                  {{ $product->price_before_discount }} {{ trans('site.SAR') }}
-                                </p>
-                              @endif
+                              <p class="text text-danger">
+                                <small>120 SAR</small>
+                              </p>
                               <!-- End of product discount price  -->
                             </div>
                             <!-- End of product price -->
                             
                             <!-- Start product in stock or not -->
-                            @if($product->qty > 0)
                               <!-- In stock -->
                               <span class="stock-success">
-                                {{ trans('site.In_Stock') }}
+                                In stock
                               </span>
-                            @else
                               <!-- Out stock -->
                               <span class="stock-danger">
-                                {{ trans('site.Not_Avilable') }}
+                                Not available
                               </span>
-                            @endif
                             <!-- End product in stock or not -->
                           </div>
                           <!-- End of product price -->
 
                           <div class="pr-support-btn-row">
-                            @if($product->qty > 0)
                               <div class="pr-support-btn-content">
                                 <button 
                                   class="pr-support-btn"
@@ -175,7 +160,7 @@
                                   data-id="{{$product->id}}"
                                 >
                                   <i class="bx bx-cart"></i>
-                                  {{ trans('site.Add_to_cart') }}
+                                  Add to cart
                                 </button>
                 
                                 <input 
@@ -187,7 +172,6 @@
                                   max="{{$product->qty}}"
                                 >
                               </div>
-                            @endif
                             
                             <!-- Start Social media icons -->
                             <div class="pr-support-media">
@@ -303,8 +287,8 @@
                               </svg>
                             </div>
                             <div class="sp-item-content">
-                              <p>{{ trans('site.Free_Shipping') }}</p>
-                              <span>{{ trans('site.For_orders_from_$50') }}</span>
+                              <p>Free shipping</p>
+                              <span>Free</span>
                             </div>
                           </div>
               
@@ -369,8 +353,8 @@
                               </svg>
                             </div>
                             <div class="sp-item-content">
-                              <p>{{ trans('site.Support_24/7') }}</p>
-                              <span>{{ trans('site.Call_us_anytime') }}</span>
+                              <p>Support 24/7</p>
+                              <span>Call us anytime</span>
                             </div>
                           </div>
               
@@ -454,14 +438,14 @@
                       <!-- first tab -->
                       <li class="product-tabs__item product-tabs__item--active">
                         <a href="#product-tab-specification">
-                          {{ trans('site.Specification') }}
+                          Specification
                         </a>
                       </li>
 
                       <!-- Second tab  -->
                       <li class="product-tabs__item">
                         <a href="#info">
-                          {{ trans('site.Vehicle_Fitment_Information') }}
+                          Vehicle Info
                         </a>
                       </li>
                     </ul>
@@ -469,7 +453,7 @@
                       <div class="product-tabs__pane" id="product-tab-description">
                         <div class="typography">
                           <p>
-                            {!! $product->short_desc !!}
+                            Short des
                           </p>
                         </div>
                       </div>
@@ -477,7 +461,7 @@
                       <div class="product-tabs__pane" id="info">
                         <div class="typography">
                           <p>
-                            {!! $product->text !!}
+                            Product text
                           </p>
                         </div>
                       </div>
@@ -487,63 +471,51 @@
                       <div class="product-tabs__pane product-tabs__pane--active" id="product-tab-specification">
                         <div class="spec">
                           <div class="spec__section">
-                            <h4 class="spec__section-title mb-2">{{ trans('site.Key_Features') }}</h4>
+                            <h4 class="spec__section-title mb-2">Key_Features</h4>
                             <div class="products-info">
                               <div class="product-info-content">
                                 <!-- Row of content -->
                                 <div class="product-info-row">
                                   <!-- Object of details -->
                                   <div class="pr-info-object">
-                                    <p>{{ trans('site.pro_id') }} :</p>
+                                    <p>Product id :</p>
                                   </div>
                       
                                   <!-- Details -->
                                   <div class="pr-info-detail">
-                                    <p>{{ $product->pro_id }}</p>
+                                    <p>2131A</p>
                                   </div>
                                 </div>
                       
                                 <!-- Row of content -->
-                                @if($product->brand_info !== Null)
                                   <div class="product-info-row">
                                     <!-- Object of details -->
                                     <div class="pr-info-object">
-                                      <p>{{ trans('site.Brand') }} :</p>
+                                      <p>Brand :</p>
                                     </div>
                         
                                     <!-- Details -->
                                     <div class="pr-info-detail">
                                       <p>
-                                        @if (app()->getLocale() == 'ar') 
-                                          {{ $product->brand_info->ar_title }} 
-                                        @else 
-                                          {{ $product->brand_info->title }} 
-                                        @endif
+                                        Brand name 
                                       </p>
                                     </div>
                                   </div>
-                                @endif  
                                 
                                 <!-- Row of content -->
-                                @if($product->quality_sold !== Null) 
                                   <div class="product-info-row">
                                     <!-- Object of details -->
                                     <div class="pr-info-object">
-                                      <p>{{ trans('site.quality_sold') }} :</p>
+                                      <p>Quality :</p>
                                     </div>
                         
                                     <!-- Details -->
                                     <div class="pr-info-detail">
                                       <p>
-                                        @if (app()->getLocale() == 'ar') 
-                                          {{ $product->ar_quality_sold }}
-                                        @else  
-                                          {{ $product->quality_sold }} 
-                                        @endif
+                                        8/10
                                       </p>
                                     </div>
                                   </div>
-                                @endif
                               </div>
                             </div>
                           </div>
@@ -560,49 +532,37 @@
               <div class="block-space block-space--layout--divider-nl"></div>
               
               
-              @if(count($related_pro) > 0)
                 <div class="block block-products-carousel" data-layout="grid-5">
                   <!-- Start Related products  -->
                   <section class="section">
                     <div class="pr-subtitle">
-                      <h1>{{ trans('site.Related_Products') }}</h1>
+                      <h1>Related_Products</h1>
                     </div>
             
                     <div class="products owl-carousel">
-                      @foreach ($related_pro as $related)
                         <!-- prdouct start -->
                         <div class="product">
                           <!-- Image of product -->
-                          <a href="{{url('Product/'.$related->url)}}">
+                          <a href="./assets/images/chad-kirchoff-xe-e69j6-Ds-unsplash.jpg">
                             <div class="product-image">
                               <img
-                                @if(count($related->images) > 0) 
-                                  src="{{ asset($related->images[0]->image) }}" 
-                                @endif  
+                                src="./assets/images/chad-kirchoff-xe-e69j6-Ds-unsplash.jpg" 
                                 alt="product-name"
                                 class="pr-image"
                               />
                               <div class="image-banner"></div>
                             </div>
                           </a>
-                          <a href="{{url('Product/'.$related->url)}}">
-                            @if (app()->getLocale() == 'ar') 
-                              {{$related->ar_title}} 
-                            @else 
-                              {{$related->title}}
-                            @endif
+                          <a href="#">
+                            title 
                           </a>                    
                           <div class="product-content">
                             <h3 class="pr-price">
-                              {{ trans('site.SAR') }} {{ $related->price }}
+                              230 SAR
                             </h3>
-                            <a href="{{url('Product/'.$related->url)}}">
+                            <a href="#">
                               <p class="pr-des">
-                                @if (app()->getLocale() == 'ar') 
-                                  {{$related->ar_title}} 
-                                @else 
-                                  {{$related->title}}
-                                @endif
+                                title 
                               </p>                      
                             </a>
                             <!-- Start discount of anything -->
@@ -611,7 +571,6 @@
                             </p>
                             <!-- End discount of anything -->
 
-                            @if($related->qty > 0)
                               <div class="pr-offer-row">
                                 <button 
                                   class="pr-btn" 
@@ -677,9 +636,7 @@
                                 </svg>
                                 <!-- End If product have free shipping -->
                               </div>
-                            @else
-                              <span class="alert alert-danger p-2">{{trans('site.not_valid')}}</span>
-                            @endif
+                              <span class="alert alert-danger p-2">Not available</span>
 
                             <div class="pr-footer">
                               <!-- Fav button  -->
@@ -697,13 +654,10 @@
                         
                         </div>
                         <!-- End product -->
-                      @endforeach
                     </div>
                   </section>
                 </div>
-              @endif
               <!-- End Related products  -->
-              
             </div>
           </div>
         </div>
@@ -711,5 +665,33 @@
       <div class="block-space block-space--layout--before-footer"></div>
     </div>
     <!-- site__body / end -->
+
+    <script src="../dist/main.js"></script>
+
+    <script>
+      $(".products").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        nav: true,
+        autoplayHoverPause: true,
+        navText: [
+          "<i class='bx bxs-left-arrow'></i>",
+          "<i class='bx bxs-right-arrow'></i>"
+        ],
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 4
+          }
+        }
+      });
+    </script>
+
   </body>
 </html>

@@ -137,9 +137,16 @@
 
 														<!-- Start of product discount price  -->
 														@if($product->price < $product->price_before_discount)
-															<p>
-																{{ $product->price_before_discount }} {{ trans('site.SAR') }}
+															<p class="text text-danger">
+																<small>
+																	<del>
+																		{{ $product->price_before_discount }} {{ trans('site.SAR') }}
+																	</del>
+																</small>
 															</p>
+															{{-- <p>
+																{{ $product->price_before_discount }} {{ trans('site.SAR') }}
+															</p> --}}
 														@endif
 														<!-- End of product discount price  -->
 													</div>
@@ -148,12 +155,12 @@
 													<!-- Start product in stock or not -->
 													@if($product->qty > 0)
 														<!-- In stock -->
-														<span class="stock-success">
+														<span>
 															{{ trans('site.In_Stock') }}
 														</span>
 													@else
 														<!-- Out stock -->
-														<span class="stock-danger">
+														<span class="text text-light bg-danger">
 															{{ trans('site.Not_Avilable') }}
 														</span>
 													@endif

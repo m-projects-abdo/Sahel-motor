@@ -206,8 +206,15 @@
 }
 
 
+.convert-lang {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 
-
+.rtl {
+  direction: rtl;
+}
 
 
 @media screen and (max-width: 768px) {

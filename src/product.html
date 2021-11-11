@@ -9,11 +9,18 @@
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
-
+    
     <title>Product Info</title>
   </head>
 
   <body>
+    
+    <div class="convert-lang">
+      <button id="swLang" class="swlang  btn btn-primary">
+        Switcch lang
+      </button>
+    </div>
+
     <section class="section">
       <div class="products-info">
         <div class="product-info-content">
@@ -75,8 +82,16 @@
         <div class="products-support-row">
           <div class="products-support-cart">
             <div class="pr-support-price">
-              <p>203 SAR</p>
-              <span>In Stock</span>
+              <div>
+                <p>203 SAR</p>
+                <p class="text text-danger">
+                  <small>120 SAR</small>
+                </p>
+              </div>
+              <div class="pr-stock-info">
+                <span>In Stock</span>
+                <span class="text text-light bg-danger">In Stock</span>
+              </div>
             </div>
             <div class="pr-support-btn-row">
               <div class="pr-support-btn-content">
@@ -311,5 +326,7 @@ s0.4-0.1,0.5-0.2l1.8-1.8l5.3,5.3c0.2,0.2,0.4,0.2,0.5,0.2c0.2,0,0.4-0.1,0.5-0.2c0
         </div>
       </div>
     </section>
+
+    <script src="../dist/main.js"></script>
   </body>
 </html>
