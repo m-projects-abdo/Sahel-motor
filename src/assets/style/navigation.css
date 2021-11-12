@@ -91,6 +91,11 @@ a{
 .header .logo{
 	padding: 0 15px;
 }
+.header .logo img{
+	border: 1px solid var(--yellow);
+	border-radius: 50%;
+}
+
 .header .logo a{
 	font-size: 30px;
 	text-transform: capitalize;
@@ -331,6 +336,7 @@ a{
 	}
 	.header-main {
 		justify-content: space-between;
+		padding: 5px 0;
 	}
 	.header .menu-overlay.active{
 		visibility: visible;
