@@ -1,26 +1,35 @@
-(() =>{
- 
-  const openNavMenu = document.querySelector(".open-nav-menu"),
-  closeNavMenu = document.querySelector(".close-nav-menu"),
-  searchButton = document.querySelector(".search-btn-v"),
-  searchButton2 = document.querySelector(".search-btn-v2"),
-  closeModalButton = document.querySelector("#close-modal-v"),
-  closeModalButton2 = document.querySelector("#close-modal-v2"),
-  searchModalContainer = document.querySelector("#search-modal-container-v"),
-  searchModal = document.querySelector("#search-modal-v"),
-  navMenu = document.querySelector(".nav-menu"),
-  menuOverlay = document.querySelector(".menu-overlay"),
+// (() =>{
+  const searchButton = document.getElementById('search-btn-v');
+  const searchButton2 = document.getElementById('search-btn-v2');
+
+  const openNavMenu = document.querySelector('.open-nav-menu'),
+  closeNavMenu = document.querySelector('.close-nav-menu'),
+  closeModalButton = document.getElementById('close-modal-v'),
+  closeModalButton2 = document.getElementById('close-modal-v2'),
+  searchModalContainer = document.getElementById('search-modal-container-v'),
+  searchModal = document.getElementById('search-modal-v'),
+  navMenu = document.querySelector('.nav-menu'),
+  menuOverlay = document.querySelector('.menu-overlay'),
   mediaSize = 991;
 
   let modalStatus = false;
 
-  openNavMenu.addEventListener("click", toggleNav);
-  closeNavMenu.addEventListener("click", toggleNav);
-  searchButton.addEventListener("click", openSearchModal);
-  searchButton2.addEventListener("click", openSearchModal);
+  function openSearchModal() {
+    searchModalContainer.classList.add("search-modal-container-active");
+    // alert('hi')
+  }
+
+  function closeSearchModal() {
+    searchModalContainer.classList.remove("search-modal-container-active");
+  }
+
+  searchButton.addEventListener('click', openSearchModal);
+  searchButton2.addEventListener('click', openSearchModal);
   closeModalButton.addEventListener("click", closeSearchModal);
   closeModalButton2.addEventListener("click", closeSearchModal);
-
+  openNavMenu.addEventListener("click", toggleNav);
+  closeNavMenu.addEventListener("click", toggleNav);
+  
   // searchModal.addEventListener("click", ()=> {
   //   modalStatus = false;
   //   closeSearchModal();
@@ -40,15 +49,6 @@
   	document.body.classList.toggle("hidden-scrolling");
   }
   
-  function openSearchModal() {
-    searchModalContainer.classList.add("search-modal-container-active");
-    // alert('hi')
-  }
-
-  function closeSearchModal() {
-    searchModalContainer.classList.remove("search-modal-container-active");
-  }
-
   navMenu.addEventListener("click", (event) =>{
       if(event.target.hasAttribute("data-toggle") && 
       	window.innerWidth <= mediaSize){
@@ -94,5 +94,5 @@
      }
   });
 
-})();
+// })();
 

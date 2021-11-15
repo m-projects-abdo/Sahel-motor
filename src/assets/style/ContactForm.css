@@ -1,0 +1,111 @@
+@import "./var.css";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bg-grid{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+/* ?CONTACT */
+.contact-section {
+  margin-top: 4.5rem;
+}
+.contact__container {
+  row-gap: 3rem;
+}
+.contact-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contact-title h1 {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--yellow);
+  opacity: .8;
+}
+.contact__input{
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--first-color-light);
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-2);
+  border-radius: .5rem;
+}
+.contact ::placeholder {
+  color: var(--bg-black-900);
+  font-family: var(--body-font);
+  font-weight: var(--font-medium);
+}
+.contact__button {
+  outline: none;
+  border: none;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+}
+.contact__info {
+  margin-bottom: var(--mb-3);
+}
+.contact__subtitle {
+  font-size: var(--h3-font-size);
+  color: var(--yellow);
+  margin-bottom: var(--mb-1);
+  opacity: .9;
+}
+.contact__text {
+  color: var(--bg-black-900);
+  opacity: .9;
+  display: block;
+  padding-left: 1rem;
+}
+/* ? BUTTON */
+.button{
+  display: inline-block;
+  font-weight: var(--font-semi-bold);
+  color: var(--light-50);
+  background-color: var(--yellow);
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  transition: .3s;
+}
+.button:hover{
+  background-color: var(--bg-black-900);
+}
+
+@media screen and (min-width: 768px) {
+  .contact__container,
+  .contact__inputs {
+      grid-template-columns: repeat(2,1fr);
+  }
+
+  .contact__inputs {
+    display: grid;
+    column-gap: 1.5rem;
+  }
+
+  .contact__info {
+    padding-left: 3rem;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .bg-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

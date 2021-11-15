@@ -2,6 +2,7 @@
   --yellow: #ffc033;
   --light-50: #fafafa;
   --light-100: #f1ffff;
+  --first-color-light: #EAE7E6;
   --primary: #0d6efd;
 
   /* background variable */
@@ -15,6 +16,33 @@
   --text-black-700: #555555;
   --text-black-600: #666666;
   --text-black-300: #bbbbbb;
+
+  --header-height: 3rem;
+  --nav-width: 324px;
+
+  /* Margenes */
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+
+  /* Font Weight */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* Font and typography */
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /* Z index */
+  --z-fixed: 100;
 
   /* Shadows */
   --outer-shadow: 3px 3px 3px #d0d0d0,

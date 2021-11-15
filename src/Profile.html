@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/style/UserProfile.css">
+    <link rel="stylesheet" href="./assets/style/MainPage.css">
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>User Profile</title>
+  </head>
+  <body>
+    <!-- ==Header and Side navigation of user Profile only== -->
+    <!-- Start Header and side nav -->
+    <header class="header">
+      <nav class="nav bg-grid">
+        <div class="profile-top-nav-tools">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
+
+          <!-- return user to main page  -->
+          <div class="nav__toggle">
+            <i class="bx bx-home-alt"></i>
+          </div>
+          
+          <!-- return user to main page  -->
+          <div class="nav__toggle" id="search-btn-v">
+            <i class="bx bx-search"></i>
+          </div>
+        </div>
+        
+
+        <div>
+          <a href="#" class="nav__logo">User name</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">
+                <i class='bx bx-home-alt'></i>
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class='bx bx-location-plus'></i>
+                Addresses
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class='bx bx-wallet'></i>
+                Wallet
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class='bx bx-trending-up'></i>
+                Return
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#works" class="nav__link">
+                <i class='bx bx-heart'></i>
+                Favourite
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class='bx bx-cart'></i>
+                Orders
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class='bx bx-user'></i>
+                Profiles
+              </a>
+            </li>
+             <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class='bx bx-log-out'></i>
+                Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header and side nav -->
+    
+    <!-- Start profile content -->
+    <section class="profile-section">
+      <!-- Side navigation contain all list of page  -->
+      <div class="profile-top-nav">
+        <header class="header profile-top-header" id="profile-top-header">
+          <nav class="nav bg-grid">
+            <div class="profile-top-nav-tools">
+              <!-- Retunr user to main page -->
+              <div class="pr-top-nav-icon">
+                <i class='bx bx-home-alt'></i>
+              </div>
+
+              <!-- Open search modal -->
+              <div class="pr-top-nav-icon" id="search-btn-v2">
+                <i class="bx bx-search"></i>
+              </div>
+            </div>
+            
+            <!-- Name of user was registered -->
+            <div>
+              <a href="#" class="pr-top-nav-user">User name</a>
+            </div>
+          </nav>
+        </header>
+      </div>
+
+      <!-- All content of user profile is showing here -->
+      <div class="profile-container">
+        <div class="profile-row">
+          <!-- ==Content here== -->
+          Content
+        </div>
+      </div>
+    </section>
+    <!-- End profile content -->
+
+    <!-- Start search modal -->
+    <div id="search-modal-container-v" class="search-modal-container">
+        <div id="search-modal-v" class="search-modal">
+          <div class="search-content">
+            <!-- close search modal icon  -->
+            <div id="close-modal-v" class="close-modal">
+              <i class="bx bx-x"></i>
+            </div>
+  
+            <p>Find a car part you want !</p>
+            <small>By adding a number of part</small>
+            <div class="search-row">
+              <input
+                class="search-input"
+                placeholder="search.."
+                type="text"
+                name="search"
+              />
+              <div id="close-modal-v2" class="search-icon">
+                <i class="bx bx-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- End search modal -->
+
+    <script src="./service/SideBar.js"></script>
+    <script src="./service/navigation.js"></script>
+  </body>
+</html>
