@@ -8,7 +8,7 @@
 }
 
 .products-support {
-  border: 1px solid var(--bg-black-100);
+  border: 1px solid var(--text-black-300);
   border-radius: 10px;
 }
 
@@ -72,8 +72,7 @@
 }
 
 .pr-support-btn-count {
-  width: 32%;
-  margin-left: 12px;
+  width: 22%;
   border-radius: 10px;
   border: none;
   background: var(--bg-black-100);
@@ -93,7 +92,7 @@
   font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
-  width: 100%;
+  width: 74%;
   transition: all .3s ease-out;
 }
 .pr-support-btn:hover {
@@ -138,7 +137,7 @@
 }
 
 .sp-item-icon {
-  padding-right: 20px;
+  padding: 0px 20px;
 }
 
 .sp-item-icon svg {

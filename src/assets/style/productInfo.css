@@ -49,12 +49,12 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  border: 2px solid var(--bg-black-100);
+  border: 2px solid var(--text-black-300);
   border-radius: 15px;
   padding: 20px;
 }
 .div-1-1-1 {
-  width: 50%;
+  width: 55%;
 }
 .div-1-1-2 {
   width: 40%;
@@ -78,7 +78,7 @@
 
 .div-1-2 {
   width: 100%;
-  border: 2px solid var(--bg-black-100);
+  border: 2px solid var(--text-black-300);
   border-radius: 15px;
   padding: 20px;
 }
@@ -99,7 +99,7 @@
 }
 
 .div-1-2-tab-item:nth-child(1) {
-  margin-right: 20px;
+  margin: 0px 20px;
 }
 
 .div-1-2-tab-item button {

@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- header start -->
-    <header id="header" class="header">
+    <header dir="ltr" id="header" class="header">
         <div class="container">
           <div class="header-main">
             <!-- Logo of navigation -->
@@ -132,8 +132,8 @@
                   </a>
                   <!-- Child items of parent item -->
                   <ul class="sub-menu">
-                    <li class="menu-item"><a href="#">Arabic</a></li>
-                    <li class="menu-item"><a href="#">English</a></li>
+                    <li id="ar-lang2" class="menu-item"><a href="#">Arabic</a></li>
+                    <li id="en-lang2" class="menu-item"><a href="#">English</a></li>
                   </ul>
                   <!-- End of child -->
                 </li>
@@ -150,8 +150,8 @@
                 </div>
   
                 <ul class="sub-menu">
-                  <li class="menu-item"><a href="#">Arabic</a></li>
-                  <li class="menu-item"><a href="#">English</a></li>
+                  <li id="ar-lang" class="menu-item"><a href="#">Arabic</a></li>
+                  <li id="en-lang" class="menu-item"><a href="#">English</a></li>
                 </ul>
               </div>
               <!-- End item tools -->
@@ -196,7 +196,7 @@
     <!-- header end -->
 
     <!-- home section start -->
-    <section class="hero-main-page">
+    <section dir="ltr" id="heroSection" class="hero-main-page">
       <!-- Start Hero section title -->
       <div class="hero-content-page">
         <div class="hero-title-subtitle">
@@ -630,7 +630,8 @@
     </section>
     <!-- home section end -->
   
-    <script src="./service/navigation.js"></script>
+    <script src="./service/langConvert.js"></script>
     <script src="./service/navScrolling.js"></script>
+    <script src="./service/navigation.js"></script>
   </body>
 </html>
