@@ -9,34 +9,48 @@ window.onload = ()=> {
   }
 }
 
+
+/*
+ * to test element if is working with converter lang
+ * testing 1 
+ * testing 2
+*/
 // testing
 // const test = document.getElementById('testlang');
 // test.addEventListener('click', this.webArLang)
 // testing
 // const test2 = document.getElementById('testlang2');
 
+/*
+ * Global error message, 
+ * if the browser not found dcoument element.
+*/ 
+const ERROR_MESSAGE = "NOT_FOUND"; 
+
 // products in slider 
-let product = document.querySelectorAll('.product');
+let product = document.querySelectorAll('.product') || ERROR_MESSAGE;
 
 // Product info and add to cart section 
-let productInfo = document.getElementById('productInfo');
+let productInfo = document.getElementById('productInfo') || ERROR_MESSAGE;
 
 // Header 
-let header = document.getElementById('header');
+let header = document.getElementById('header') || ERROR_MESSAGE;
 
 // Hero section
-let heroSection = document.getElementById('heroSection');
+let heroSection = document.getElementById('heroSection') || ERROR_MESSAGE;
 
 // Footer section
-let footer = document.getElementById('footer');
+let footer = document.getElementById('footer') || ERROR_MESSAGE;
 
 // footer title section
-let title = document.querySelectorAll('.title-ltr');
+let title = document.querySelectorAll('.title-ltr') || ERROR_MESSAGE;
 
-// convert button
+// all converter button
 const arLang = document.getElementById('ar-lang');
-const arLangSmall = document.getElementById('ar-lang-small');
 const enLang = document.getElementById('en-lang');
+
+// this to small screen
+const arLangSmall = document.getElementById('ar-lang-small');
 const enLangSmall = document.getElementById('en-lang-small');
 
 arLang.addEventListener('click', this.webArLang)
@@ -56,9 +70,11 @@ function webArLang() {
  
   converter('rtl');
   
-  title.forEach(e => {
-    e.classList.add('title-rtl');
-  });
+  if(title != ERROR_MESSAGE) {
+    title.forEach(e => {
+      e.classList.add('title-rtl');
+    });
+  }
 
 } 
 
@@ -68,11 +84,14 @@ function webEnLang() {
   // Add new lang to localStorage
   localStorage.setItem('lang', 'ltr');
   
-  title.forEach(e => {
-    e.classList.remove('title-rtl');
-  });
-
   converter('ltr');
+
+  if(title != ERROR_MESSAGE) {
+    title.forEach(e => {
+      e.classList.remove('title-rtl');
+    });
+  }
+
 } 
 
 /*
@@ -81,19 +100,25 @@ function webEnLang() {
 */
 function converter(lang) {
   // RTL convert product info section and add to cart when you are clicking
-  // productInfo.dir = lang
-  
+  if(productInfo != ERROR_MESSAGE) 
+    productInfo.dir = lang;
+ 
+  // RTL convert header when you are clicking
+  if(header != ERROR_MESSAGE) 
+    header.dir = lang;
+
   // RTL convert all products when you are clicking
-  product.forEach(e => {
-    e.dir = lang;
-  })
+  if(product != ERROR_MESSAGE) 
+    product.forEach(e => {
+      e.dir = lang;
+    })
 
   // RTL convert footer when are clicking
-  footer.dir = lang;
+  if(footer != ERROR_MESSAGE)   
+    footer.dir = lang;
 
-  // RTL convert header when you are clicking
-  header.dir = lang
  
   // RTL convert hero section when you are clicking
-  heroSection.dir = lang 
+  if(heroSection != ERROR_MESSAGE) 
+    heroSection.dir = lang; 
 }

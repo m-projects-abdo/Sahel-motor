@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./assets/style/Cart.css" />
+    <link rel="stylesheet" href="./assets/style/navigation.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -34,6 +35,208 @@
     <title>Cart Card</title>
   </head>
   <body>
+    <!-- header start -->
+    <header dir="ltr" id="header" class="header header-scroll">
+      <div class="container">
+        <div class="header-main">
+          <!-- Logo of navigation -->
+          <div class="logo">
+            <img
+              class="rounded-circle border border-dark"
+              src="./assets/images/logo-22.png"
+              height="50"
+              width="50"
+              alt=""
+            />
+            <!-- <a id="logo" href="#">Sahel</a> -->
+          </div>
+          <!-- End of logo -->
+
+          <!-- cart of navigation -->
+          <div class="side-tools-small-screen">
+            <div class="menu-item-has-children child-small-screen small-screen">
+              <div class="cart-button sub-cart-button">
+                <span class="product-count">20</span>
+                <i id="cart" class="bx bx-cart"></i>
+              </div>
+
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="#">Cart : 1203 SAR</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- <div class="cart-button small-screen">
+                    <i class='bx bx-cart'></i>
+                  </div> -->
+
+            <div class="search-btn-v cart-button small-screen">
+              <i id="search" class="bx bx-search"></i>
+            </div>
+
+            <!-- Open nav button  -->
+            <div class="open-nav-menu cart-button">
+              <i id="open" class="bx bx-menu"></i>
+            </div>
+            <!-- End open button -->
+          </div>
+
+          <!-- End cart -->
+
+          <!-- Shadow of small nav  -->
+          <div class="menu-overlay"></div>
+          <!-- End of shadow  -->
+
+          <!-- navigation menu start -->
+          <nav class="nav-menu">
+            <!-- Close nav button -->
+            <div class="close-nav-menu">
+              <i class="bx bx-x"></i>
+            </div>
+            <!-- End close button -->
+
+            <!-- List of nav items -->
+            <ul class="menu">
+              <li class="menu-item menu-item-has-children">
+                <a
+                  href="#"
+                  class="title-scroll"
+                  id="a-home"
+                  data-toggle="sub-menu"
+                >
+                  Home <i class="icon-child bx bx-down-arrow"></i>
+                </a>
+                <!-- Child items of parent item -->
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">Home 1</a></li>
+                  <li class="menu-item"><a href="#">Home 2</a></li>
+                  <li class="menu-item"><a href="#">Home 3</a></li>
+                  <li class="menu-item"><a href="#">Home 4</a></li>
+                </ul>
+                <!-- End of child -->
+              </li>
+
+              <li class="menu-item">
+                <a id="a-about" class="title-scroll" href="#">About</a>
+              </li>
+
+              <li class="menu-item">
+                <a id="a-services" class="title-scroll" href="#">Services</a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a
+                  id="a-pages"
+                  class="title-scroll"
+                  href="#"
+                  data-toggle="sub-menu"
+                >
+                  Pages <i class="icon-child bx bx-down-arrow"></i>
+                </a>
+                <!-- Child items of parent item -->
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">page 1</a></li>
+                  <li class="menu-item"><a href="#">page 2</a></li>
+                  <li class="menu-item"><a href="#">page 3</a></li>
+                  <li class="menu-item"><a href="#">page 4</a></li>
+                </ul>
+                <!-- End of child -->
+              </li>
+
+              <li class="menu-item">
+                <a id="a-news" class="title-scroll" href="#">News</a>
+              </li>
+
+              <li class="menu-item">
+                <a id="a-contact" class="title-scroll" href="#">Contact</a>
+              </li>
+
+              <li class="menu-item menu-item-has-children small-screen">
+                <a href="#" class="title-scroll" data-toggle="sub-menu">
+                  Registeration <i class="icon-child bx bx-down-arrow"></i>
+                </a>
+                <!-- Child items of parent item -->
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">Login</a></li>
+                  <li class="menu-item"><a href="#">Register</a></li>
+                </ul>
+                <!-- End of child -->
+              </li>
+
+              <li class="menu-item menu-item-has-children small-screen">
+                <a href="#" data-toggle="sub-menu">
+                  Language <i class="icon-child bx bx-down-arrow"></i>
+                </a>
+                <!-- Child items of parent item -->
+                <ul class="sub-menu">
+                  <li id="ar-lang-small" class="menu-item">
+                    <a href="#">Arabic</a>
+                  </li>
+                  <li id="en-lang-small" class="menu-item">
+                    <a href="#">English</a>
+                  </li>
+                </ul>
+                <!-- End of child -->
+              </li>
+            </ul>
+            <!-- End list of items -->
+          </nav>
+          <!-- navigation menu end -->
+
+          <div class="side-tools">
+            <!-- first item tools -->
+            <div class="menu-item-has-children">
+              <div class="cart-button">
+                <i id="detail" class="title-scroll bx bx-detail"></i>
+              </div>
+
+              <ul class="sub-menu">
+                <li id="ar-lang" class="menu-item"><a href="#">Arabic</a></li>
+                <li id="en-lang" class="menu-item"><a href="#">English</a></li>
+              </ul>
+            </div>
+            <!-- End item tools -->
+
+            <!-- Second item tools -->
+            <div class="menu-item-has-children">
+              <div class="cart-button">
+                <i id="user" class="title-scroll bx bx-user"></i>
+              </div>
+
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="#">Login</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Register</a>
+                </li>
+              </ul>
+            </div>
+            <!-- End item -->
+
+            <div class="menu-item-has-children">
+              <div class="cart-button sub-cart-button">
+                <span class="product-count">20</span>
+                <i id="cart2" class="title-scroll bx bx-cart"></i>
+              </div>
+
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="#">Cart : 1203 SAR</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="search-btn-v2 cart-button">
+              <i id="search2" class="title-scroll bx bx-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
     <!-- Start Products section -->
     <section class="section">
       <div class="pr-subtitle">
@@ -687,6 +890,7 @@ c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8h-2.5v-1.7H28c0.4,0,0.8-0.3,0.8-0.8s-0.3-
     </section>
     <!-- End Products section -->
 
+    <script src="./service/navigation.js"></script>
     <script src="./service/slider.js"></script>
     <script src="./service/langConvert.js"></script>
   </body>
