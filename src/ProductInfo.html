@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./assets/style/productInfo.css" />
     <link rel="stylesheet" href="./assets/style/product.css" />
     <link rel="stylesheet" href="./assets/style/Cart.css" />
+    <!-- <link rel="stylesheet" href="../../image_slider_frontend/style.css" /> -->
+
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
@@ -42,7 +44,47 @@
         <div class="div-1-1">
           <div class="div-1-1-1">
             <div class="div-1-image">
-              <img src="./assets/images/dept/car-oil.jpg" alt="" />
+              <img id="featured" src="./assets/images/car-engine.png" />
+
+              <div id="slide-wrapper">
+                <img
+                  id="slideLeft"
+                  class="arrow"
+                  src="./assets/images/arrow-left.png"
+                />
+
+                <div id="slider">
+                  <img
+                    class="thumbnail active-image"
+                    src="./assets/images/car-engine.png"
+                  />
+                  <img class="thumbnail" src="./assets/images/hero-bg.jpg" />
+                  <img
+                    class="thumbnail"
+                    src="./assets/images/ryan-hafey-i5n6WHtvQ4c-unsplash.jpg"
+                  />
+
+                  <img
+                    class="thumbnail"
+                    src="./assets/images/tim-mossholder-V37iTrYZz2E-unsplash.jpg"
+                  />
+                  <img
+                    class="thumbnail"
+                    src="./assets/images/bg-1920-new.jpg"
+                  />
+                  <img class="thumbnail" src="./assets/images/banner.jpg" />
+                  <img
+                    class="thumbnail"
+                    src="./assets/images/dept/mechanical parts.jpg"
+                  />
+                </div>
+
+                <img
+                  id="slideRight"
+                  class="arrow"
+                  src="./assets/images/arrow-right.png"
+                />
+              </div>
             </div>
           </div>
           <div class="div-1-1-2">
@@ -683,6 +725,7 @@ s0.4-0.1,0.5-0.2l1.8-1.8l5.3,5.3c0.2,0.2,0.4,0.2,0.5,0.2c0.2,0,0.4-0.1,0.5-0.2c0
     </section>
     <!-- End Products section -->
 
+    <script src="./service/ProductInfoSlider.js"></script>
     <script src="./service/langConvert.js"></script>
     <script src="./service/productTabe.js"></script>
     <script src="./service/slider.js"></script>
