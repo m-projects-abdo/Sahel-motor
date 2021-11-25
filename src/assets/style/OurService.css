@@ -38,26 +38,6 @@
 
 }
 
-/*
-  Hover and border 
-
-  ========
-  when hover:
-  .services__content {
-    box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.3);
-  }
-
- .services__icon {
-   box-shadow: inset 0px 0px 15px 2px rgba(0, 0, 0, 0.4);
-  } 
-  =======
-
-  .services__icon {
-    border: 2px solid transparent;
-    box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
-  }
-
-*/
 
 *{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -73,8 +53,9 @@
   margin-right: var(--mb-2);
 }
 
-.section{
+.section-service{
   padding: 4rem 0 2rem;
+  margin: 0px auto;
 }
 .section-title{
   font-size: 2.4rem;
@@ -89,6 +70,7 @@
   color: var(--bg-black-900);
   text-align: center;
   margin-bottom: .25rem;
+  opacity: .8;
 }
 
 .services__container {
@@ -100,12 +82,12 @@
   justify-content: center;
   flex-direction: column;
   padding: 1.5rem .5rem;
-  border: 2px solid var(--yellow);
+  border: 2.1px solid var(--yellow);
   border-radius: .5rem;
   text-align: center;
 }
 .services__content:hover {
-  box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.19);
 }
 .services__icon {
   font-size: 2rem;
@@ -113,25 +95,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--yellow);
-  /* color: var(--yellow-lighten); */
+  /* background-color: var(--light-100); */
   border-radius: 50%;
   margin-bottom: var(--mb-2);
-  border: 2px solid transparent;
-  box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
+  border: 2.1px solid var(--yellow);
+  /* box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.2); */
 }
-.services__icon img {
-  width: 50px;
-  height: 50px;
+.services__icon svg {
+  fill: var(--bg-black-900);
+  opacity: .8;
 }
 .services__title {
   font-weight: bolder;
   font-size: 1.25rem;
   color: var(--bg-black-900);
+  opacity: .8;
   margin-bottom: 0;
 }
 .services__description {
   color: var(--bg-black-900);
+  opacity: .8;
 }
 .services__content, .services__icon, .services__title, .services__description {
   transition: .5s;
@@ -139,9 +122,12 @@
 .services__content:hover {
   background-color: var(--yellow);
 }
+.services__content:hover .services__icon svg{
+  fill: var(--yellow);
+}
 .services__content:hover .services__icon {
   background-color: var(--light-100);
-  box-shadow: inset 0px 0px 15px 2px rgba(0, 0, 0, 0.4);
+  /* box-shadow: inset 0px 0px 15px 2px rgba(0, 0, 0, 0.4); */
   /* color: var(--yellow); */
 }
 .services__content:hover .services__title {
