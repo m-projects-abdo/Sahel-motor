@@ -186,8 +186,7 @@
 #slider::-webkit-scrollbar-thumb {
   background-color: #dede2e;
   outline: 1px solid slategrey;
-   border-radius: 100px;
-
+  border-radius: 100px;
 }
 
 #slider::-webkit-scrollbar-thumb:hover{
@@ -221,7 +220,6 @@
 .div-2 {
   width: 28%;
   min-height: 100vh;
-  /* background: lightsalmon; */
 }
 .div-1-image {
   height: 100%;
@@ -236,7 +234,7 @@
 
 
 @media screen and (max-width: 1024px) {
-  section {
+  .products-info-section {
     flex-direction: column; 
     justify-content: stretch;
   }

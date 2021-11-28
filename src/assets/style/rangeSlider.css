@@ -1,0 +1,71 @@
+@import"./var.css";
+
+.price-range-block {
+  margin-top: 35px;
+}
+
+.ui-slider-horizontal {
+  width: 100%;
+  height: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.ui-widget-header {
+  background: var(--bg-black-900);
+}
+.ui-widget.ui-widget-content {
+  border: 2px solid var(--bg-black-900); 
+  background: var(--bg-black-50);
+}
+.ui-slider-handle.ui-corner-all.ui-state-default {
+  width: 20px;
+  height: 20px;
+  top: -7px;
+  border-radius: 100%;
+  background: var(--bg-black-900);
+  border: 1px solid var(--bg-black-50);
+}
+
+.price-range-search {
+  background-color: #202020;
+  color: #fff;
+  border: 1px solid #202020;
+  display: inline-block;
+  height: 32px;
+  border-radius: 5px;
+  margin:20px 0;
+  font-size:16px;
+}
+.price-range-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+.price-range-field{
+  width: 100px;
+  height: 35px;
+  background-color:var(--bg-black-100); 
+  border: none; 
+  color: var(--bg-black-900);
+  font-size: 15px;
+  border-radius: 10px; 
+  padding:5px;
+  font-weight: 900;
+}
+.search-results-block{
+  position: relative;
+  display: block;
+  clear: both;
+  margin-top: 20px;
+}
+
+.price-range-filter-btn {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: var(--yellow);
+  color: var(--bg-black-100);
+  font-weight: 900;
+}

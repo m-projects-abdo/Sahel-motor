@@ -33,6 +33,9 @@ let product = document.querySelectorAll('.product') || ERROR_MESSAGE;
 // Product info and add to cart section 
 let productInfo = document.getElementById('productInfo') || ERROR_MESSAGE;
 
+// product result section and side tools and slider 
+let productResultSection = document.getElementById('product-result-section') || ERROR_MESSAGE;
+
 // Header 
 let header = document.getElementById('header') || ERROR_MESSAGE;
 
@@ -102,6 +105,10 @@ function converter(lang) {
   // RTL convert product info section and add to cart when you are clicking
   if(productInfo != ERROR_MESSAGE) 
     productInfo.dir = lang;
+ 
+  // RTL convert product Result Section when you are clicking
+  if(productResultSection != ERROR_MESSAGE) 
+    productResultSection.dir = lang;
  
   // RTL convert header when you are clicking
   if(header != ERROR_MESSAGE) 

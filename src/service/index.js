@@ -14,10 +14,12 @@ import navigation from "./navigation";
 import navScrolling from "./navScrolling";
 import slider from "./slider";
 import search from "./search";
+import ProductSearchResult from "./ProductSearchResult";
 
 export default {
   navigation,
   navScrolling,
   slider,
   search,
+  ProductSearchResult
 }

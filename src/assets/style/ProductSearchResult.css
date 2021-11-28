@@ -1,0 +1,136 @@
+@import "./var.css";
+
+.product-result-side-parent {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid var(--bg-black-100);
+}
+
+.product-result {
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.result-margin {
+  margin: 0 25px 20px 0px !important;
+}
+
+.product-result-side,
+.pr-res-brand,
+.pr-res-category,
+.pr-res-range {
+  width: 100%;
+}
+
+.product-result-side {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  padding: 25px 30px;  
+}
+
+.pr-res-category {
+  height: 25%;
+  margin-bottom: 20px;
+}
+
+.pr-res-brand {
+  height: 25%;
+  margin-bottom: 20px;
+}
+
+.pr-res-range {
+  height: 75%;
+}
+
+
+.pr-res-category-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pr-res-category-title p {
+  color: var(--yellow);
+  font-size: 1.5rem;
+  border: 1px solid var(--yellow);
+  padding: 5px 0px;
+  border-radius: 10px;
+}
+.pr-res-category-list ul {
+  padding: 0px 5px;
+}
+.pr-res-category-list li {
+  margin-bottom: 10px;
+  color: var(--bg-black-900);
+  font-size: 1rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--bg-black-100);
+}
+
+.products-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
+}
+
+.pagination-box ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--bg-black-50);
+  padding: 8px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.pagination-box ul li{
+  color: var(--yellow);
+  list-style: none;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+.pagination-box ul li.numb{
+  list-style: none;
+  height: 45px;
+  width: 45px;
+  margin: 0 3px;
+  line-height: 45px;
+  border-radius: 50%;
+}
+.pagination-box ul li.numb.first{
+  margin: 0px 3px 0 -5px;
+}
+.pagination-box ul li.numb.last{
+  margin: 0px -5px 0 3px;
+}
+.pagination-box ul li.dots{
+  font-size: 22px;
+  cursor: default;
+}
+.pagination-box ul li.btn{
+  padding: 0 20px;
+  border-radius: 50px;
+}
+.pagination-box li.active,
+.pagination-box ul li.numb:hover,
+.pagination-box ul li:first-child:hover,
+.pagination-box ul li:last-child:hover{
+  color: #fff;
+  background: var(--yellow);
+}
+
+
+@media screen and (max-width: 768px) {
+  .product-result {
+    justify-content: center;
+  }
+}

@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style: none;
 }
 .section{
   padding: 4rem 0 2rem;
@@ -18,7 +19,7 @@
 .pr-subtitle h1 {
   font-size: 2rem;
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   color: var(--bg-black-900);
   font-weight: 900;
   border-bottom: 3px solid var(--yellow);
@@ -36,14 +37,13 @@
   /* border: 1px solid transparent; */
 }
 .product {
-  max-width: 255px;
+  max-width: 258px;
   /* box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3); */
   border-radius: 10px;
   overflow: hidden;
-  border: 2px solid rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--bg-black-100);
   margin: 0 5px;
-  min-height: 472px !important;
-  /* transform: translateX(calc(-100% - 15px)); */
+  /* min-height: 472px !important; */
 }
 .product-image {
   width: 100%;
@@ -73,7 +73,8 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  min-height: 302px !important;
+  min-height: calc(100% - 180px);
+  background: var(--bg-black-50);
 }
 
 .pr-price {
@@ -85,16 +86,15 @@
 }
 
 .pr-des {
-  margin-top: 10px;
   font-weight: 500;
   opacity: .7;
+  margin-top: 5px;
 }
 
 .pr-offer {
   color: #c60000;
   font-weight: 300;
   opacity: .6;
-  margin-top: 5px;  
   margin-bottom: 19px;  
 }
 .pr-offer-row {
