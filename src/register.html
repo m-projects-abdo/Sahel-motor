@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/style/FormStyle.css">
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
@@ -12,72 +13,64 @@
     <title>Register</title>
   </head>
   <body class="background-main">
-    <!-- header start -->
-    <header class="header">
-      <div class="container">
-        <!-- Logo of navigation -->
-        <div class="logo">
-          <a href="#">Sahel</a>
-        </div>
-        <!-- End of logo -->
-        
-        <div class="side-tools">
-          <div class="menu-item-has-children">
-            <div class="cart-button">
-              <i class='bx bxs-detail'></i>
-            </div>
-
-            <ul class="sub-menu">
-              <li class="menu-item"><a href="#">Arabic</a></li>
-              <li class="menu-item"><a href="#">English</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="container center-items height-100 overflow-hidden">
-      <div class="row">
+    <section class="form-container-sec">
+      <div class="form-row">
         <!-- start form inputs -->
           <form class="container-form-v center-items">
+            <!-- start subtitle -->
             <div class="subtitle">
               <h1>Create new account</h1>
             </div>
+            <!-- end subtitle -->
+            
             <div class="form-input-group-v">
+              <!-- start input field -->
               <div class="input-v">
                 <input 
                   class="input-value-v" 
-                  placeholder="Name" 
                   type="text" 
-                  required
+                  placeholder="Full name" 
                 />
               </div>
+              <!-- end input field -->
+              <!-- start input field -->
               <div class="input-v">
                 <input 
                   class="input-value-v" 
-                  placeholder="Email" 
+                  type="text" 
+                  placeholder="Phone number" 
+                />
+              </div>
+              <!-- end input field -->
+              <!-- start input field -->
+              <div class="input-v">
+                <input 
+                  class="input-value-v" 
+                  type="text" 
+                  placeholder="Address" 
+                />
+              </div>
+              <!-- end input field -->
+              <!-- start input field -->
+              <div class="input-v">
+                <input 
+                  class="input-value-v" 
                   type="email" 
-                  required
+                  placeholder="Email" 
                 />
               </div>
+              <!-- end input field -->
+
+              <!-- start input field -->
               <div class="input-v mb-1">
-                <div class="toggle">
-                  <i>@</i>
-                </div>
                 <input 
                   class="input-value-v"
-                  placeholder="Password" 
                   type="password" 
-                  required
+                  placeholder="Password" 
                 />
               </div>
-              <div class="input-v mb-1">
-                <input 
-                  class="input-value-v"
-                  placeholder="Password Confirmation" 
-                  type="password"
-                  required 
-                />
-              </div>
+              <!-- end input field -->
+
               <div class="switch-page">
                 <div class="button-v">
                   <button 
@@ -95,96 +88,41 @@
             </div>
           </form>
         <!-- end form inputs -->
-      </div>
-    </div>
-    <footer>
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-sm-6 footer-contact">
-              <div class="address">
-                <h3>SahelMotor</h3>
-                <p class="mb-4 mt-4">Shahabad Markanda, 136135, India</p>
-                <p><strong>Phone:</strong> +91 8558020904</p>
-                <p><strong>Email:</strong> markuptag20@gmail.com</p>
-              </div>
-            </div>
 
-            <div class="col-lg-2 col-sm-6 footer-menus">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="fas fa-check"></i> <a href="#">Home</a></li>
-                <li><i class="fas fa-check"></i> <a href="#">About us</a></li>
-                <li><i class="fas fa-check"></i> <a href="#">Services</a></li>
-                <li>
-                  <i class="fas fa-check"></i> <a href="#">Terms of service</a>
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> <a href="#">Privacy policy</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-sm-6 footer-menus">
-              <h4>Our Services</h4>
-              <ul>
-                <li><i class="fas fa-check"></i> <a href="#">Web Design</a></li>
-                <li>
-                  <i class="fas fa-check"></i> <a href="#">Web Development</a>
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>
-                  <a href="#">Product Management</a>
-                </li>
-                <li><i class="fas fa-check"></i> <a href="#">Marketing</a></li>
-                <li>
-                  <i class="fas fa-check"></i> <a href="#">Graphic Design</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-4 col-sm-6 newsletter">
-              <h4>Our Newsletter</h4>
-              <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
-              </p>
-              <form action="" method="post">
-                <input type="email" name="email" />
-                <input
-                  type="submit"
-                  value="Subscribe"
-                />
-              </form>
-
-              <div class="social-links mt-3">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-              </div>
-            </div>
+        <div class="social-form">
+          <div class="social-form-line">
+            <p>OR</p>
           </div>
+          <form class="social-form-container">
+            <!-- start button -->
+            <div class="input-v">
+              <button class="sign-with google">
+                Google
+                <i class='bx bxl-google'></i>
+              </button>
+            </div>
+            <!-- end button -->
+
+            <!-- start button -->
+            <div class="input-v">
+              <button class="sign-with facebook">
+                Facebook
+                <i class='bx bxl-facebook'></i>
+              </button>
+            </div>
+            <!-- end button -->
+
+            <!-- start button -->
+            <div class="input-v">
+              <button class="sign-with facebook">
+                Twitter
+                <i class='bx bxl-twitter'></i>
+              </button>
+            </div>
+            <!-- end button -->
+          </form>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <p class="text-center mb-2">
-                &copy; Copyright <strong>markuptag</strong>. All Rights Reserved
-              </p>
-              <p class="text-center mb-0">
-                Created by <a href="https://www.markuptag.com/">markuptag</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="../dist/main.js"></script>
+    </section>
   </body>
 </html>

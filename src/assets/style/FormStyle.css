@@ -1,10 +1,39 @@
 @import "./var.css";
-.container-form-v {
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.form-container-sec {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.form-row {
+  width: 100%;
+  display: flex;
   flex-direction: column;
-  width: 30rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.container-form-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container-form-v .subtitle {
   border-bottom: 1px solid var(--yellow);
+  text-align: center;
+  display: inline-block;
 }
 .container-form-v .subtitle h1 {
   color: var(--yellow);
@@ -16,7 +45,7 @@
   padding-top: 10px;
 }
 .container-form-v .form-input-group-v .input-v {
-  padding: 10px 0;
+  padding: 6px 0;
   position: relative;
 }
 .container-form-v .form-input-group-v .input-v .toggle {
@@ -32,11 +61,12 @@
 }
 .container-form-v .form-input-group-v .input-v .input-value-v {
   width: 100%;
-  background: var(--light-100);
-  padding: 10px 15px;
+  background: var(--bg-black-50);
+  padding: 14px 15px;
   border: none;
   border-radius: 8px;
   outline: none;
+  font-weight: 900;
 }
 .container-form-v .form-input-group-v .input-v .input-value-v.input-error-v {
   border: 1px solid red;
@@ -52,18 +82,90 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  margin-top: 15px;
 }
 .container-form-v .form-input-group-v .switch-page .button-v {
   width: 100%;
+  margin-bottom: 8px;
 }
-.container-form-v .form-input-group-v .switch-page .button-v button {
+.container-form-v .form-input-group-v .switch-page .button-v button,
+.sign-with {
   background: var(--yellow);
   width: 100%;
   color: var(--light-100);
+  padding: 14px 0;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+.container-form-v .form-input-group-v .switch-page .button-v button:hover,
+.sign-with:hover {
+  opacity: .8;
+  transition: all .3s ease;
+}
+.switch-page-link {
+  padding: 5px 0;
+  /* width: 100%; */
 }
 .switch-page-link .title {
-  letter-spacing: 1px !important;
-  font-weight: 300;
-  color: var(--text-black-700);
-  font-size: 1rem !important;
+  font-weight: lighter;
+  font-size: .9rem;
+  font-family: 'Ephesis', cursive;
+  /* color: var(--bg-black-900); */
+}
+
+.social-form {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px auto;
+}
+.social-form-line {
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.social-form-line p {
+  position: relative;
+  font-family: 'Ephesis', cursive;
+  color: var(--bg-black-900);
+}
+.social-form-line p::after,
+.social-form-line p::before {
+  content: '';
+  width: 43%;
+  height: 1px;
+  background: var(--bg-black-900);
+  position: absolute;
+  top: 12px;
+}
+.social-form-line p::after {
+  right: 0;
+}
+.social-form-line p::before {
+  left: 0;
+}
+.sign-with {
+  display: flex;
+  color: var(--bg-black-50);
+  background: var(--bg-black-900);
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+.social-form-container {
+  width: 100%;
+}
+
+
+@media screen and (min-width: 900px) {
+  .container-form-v .form-input-group-v,
+  .social-form {
+    width: 40%;
+  }
 }
