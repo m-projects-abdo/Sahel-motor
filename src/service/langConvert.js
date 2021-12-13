@@ -42,6 +42,9 @@ let header = document.getElementById('header') || ERROR_MESSAGE;
 // Hero section
 let heroSection = document.getElementById('heroSection') || ERROR_MESSAGE;
 
+// Login and Register section
+let authSection = document.getElementById('auth-section') || ERROR_MESSAGE;
+
 // Footer section
 let footer = document.getElementById('footer') || ERROR_MESSAGE;
 
@@ -128,4 +131,8 @@ function converter(lang) {
   // RTL convert hero section when you are clicking
   if(heroSection != ERROR_MESSAGE) 
     heroSection.dir = lang; 
+  
+  // RTL convert hero section when you are clicking
+  if(authSection != ERROR_MESSAGE)
+    authSection.dir = lang;
 }
